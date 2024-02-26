@@ -5,7 +5,7 @@
 //every subsequent time it is called (n, n + 1, n + 2, etc).
 
 
-/*ex:-
+/*
 Input: 
 n = 10 
 ["call","call","call"]
