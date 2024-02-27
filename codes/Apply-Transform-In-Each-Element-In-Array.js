@@ -14,18 +14,16 @@ Explanation:
 const newArray = map(arr, plusone); // [2,3,4]
 The function increases each value in the array by one. 
 */
-var map = function(arr, fn) {
-    const arr1=[];
-    for(let i=0;i<arr.length;i++)
-    {
-        arr1[i] =fn(arr[i],i);
+var map = function (arr, fn) {
+    const arr1 = [];
+    for (let i = 0; i < arr.length; i++) {
+        arr1[i] = fn(arr[i], i);
     }
     return arr1;
 };
-const arr=[2,3,4];
-const fn = function(n)
-{
-     return n+1;
+const arr = [2, 3, 4];
+const fn = function (n) {
+    return n + 1;
 }
-const arr1 =map(arr,fn);
+const arr1 = map(arr, fn);
 console.log(arr1);
