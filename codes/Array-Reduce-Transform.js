@@ -36,6 +36,10 @@ var reduce = function(nums, fn, init)
     }
     return accum;
 };
+const add = (a, b) => a + b;
+const nums = [1, 2, 3, 4];
+const sum = reduce(nums, add,0);
+console.log(sum); 
 
 
 
