@@ -34,7 +34,7 @@ var reduce = function(nums, fn, init)
     {
        accum =fn(accum,nums[i])
     }
-    return accum
+    return accum;
 };
 
 
