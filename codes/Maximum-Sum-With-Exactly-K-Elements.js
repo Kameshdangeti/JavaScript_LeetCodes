@@ -23,16 +23,15 @@
     It can be proven, that 18 is the maximum answer that we can achieve.
 */
 
-var maximizeSum = function(nums, k) 
-{
+var maximizeSum = function (nums, k) {
     let max = Math.max(...nums);
     sum = max;
-    for(let i=1; i<k; i++){
-        sum+= max+i;
+    for (let i = 1; i < k; i++) {
+        sum += max + i;
     }
     return sum;
 };
-const nums =[1,2,3,4,5];
-const k =3;
-const maximizingsum= maximizeSum(nums,k);
+const nums = [1, 2, 3, 4, 5];
+const k = 3;
+const maximizingsum = maximizeSum(nums, k);
 console.log(maximizingsum);
