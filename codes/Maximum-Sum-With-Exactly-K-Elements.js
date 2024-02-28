@@ -33,5 +33,5 @@ var maximizeSum = function (nums, k) {
 };
 const nums = [1, 2, 3, 4, 5];
 const k = 3;
-const maximizingsum = maximizeSum(nums, k);
-console.log(maximizingsum);
+const max = maximizeSum(nums, k);
+console.log(max);
