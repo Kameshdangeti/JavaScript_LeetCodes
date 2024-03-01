@@ -26,7 +26,7 @@ will leave it unchanged. Therefore, the length of
 the minimized string is 3.
 */
 
-var minimizedStringLength = function(s) {
+var minimizedStringLength = function (s) {
     const stringlength = new Set([...s]);    //set binds an object property to function to be called when
     return stringlength.size;                //there is an attempt to set that property.
 };
