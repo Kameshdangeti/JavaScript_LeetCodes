@@ -16,10 +16,10 @@ The time the returned promise resolves is not
 judged for this problem.
 */
 
-var addTwoPromises = async function(promise1, promise2) {
+var addTwoPromises = async function (promise1, promise2) {
     const [value1, value2] = await Promise.all([promise1, promise2]);
 
-    return value1+value2;
+    return value1 + value2;
 };
 var promise1 = new Promise(resolve => setTimeout(() => resolve(2), 20)); //setTimeout is used to delay the execution of
 var promise2 = new Promise(resolve => setTimeout(() => resolve(5), 60)); //the code.
