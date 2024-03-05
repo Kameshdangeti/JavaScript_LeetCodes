@@ -14,19 +14,17 @@ the maximm vale in nums,it is the only valid
 answer.
 */
 
-var findNonMinOrMax = function(nums) {
-    if(nums.length<3)
-    {
+var findNonMinOrMax = function (nums) {
+    if (nums.length < 3) {
         return -1;
     }
-    else
-    {
-        if(nums.sort((a,b)=>a-b))  //The sort() method of Array instances sorts the 
+    else {
+        if (nums.sort((a, b) => a - b))  //The sort() method of Array instances sorts the 
         {                          //elements of an array in place and returns the reference to the same array.
-           return nums[1];
+            return nums[1];
         }
     }
 };
-const nums =[10,4,22];
+const nums = [10, 4, 22];
 const num = findNonMinOrMax(nums);
 console.log(num);
