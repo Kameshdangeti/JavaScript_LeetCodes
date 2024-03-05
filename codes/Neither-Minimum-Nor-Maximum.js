@@ -21,8 +21,8 @@ var findNonMinOrMax = function(nums) {
     }
     else
     {
-        if(nums.sort((a,b)=>a-b))
-        {
+        if(nums.sort((a,b)=>a-b))  //The sort() method of Array instances sorts the 
+        {                          //elements of an array in place and returns the reference to the same array.
            return nums[1];
         }
     }
