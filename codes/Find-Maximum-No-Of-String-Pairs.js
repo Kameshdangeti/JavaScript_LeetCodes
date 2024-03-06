@@ -28,17 +28,15 @@ It can be proven that 2 is the maximum number of
 pairs that can be formed.
 */
 
-var maximumNumberOfStringPairs = function(words) 
-{
+var maximumNumberOfStringPairs = function (words) {
     const set = new Set()
     let n = 0;
-    for (let word of words) 
-    {
+    for (let word of words) {
         if (set.has(word.split('').reverse().join('')))  //The split() method of String values takes a pattern 
         {                                                //and divides this string into an ordered list of substrings
-          n++ ;                                          // by searching for the pattern.
+            n++;                                          // by searching for the pattern.
         }
-         set.add(word);                                  //The has() method of Map instances returns a boolean 
+        set.add(word);                                  //The has() method of Map instances returns a boolean 
     }                                                    //indicating whether an element with the specified key exists 
-    return n ;                                           //in this map or not.
+    return n;                                           //in this map or not.
 };
