@@ -40,3 +40,4 @@ var maximumNumberOfStringPairs = function (words) {
     }                                                    //indicating whether an element with the specified key exists 
     return n;                                           //in this map or not.
 };
+console.log(maximumNumberOfStringPairs(["cd","ac","dc","ca","zz"]));
