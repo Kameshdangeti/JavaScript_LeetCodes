@@ -14,7 +14,6 @@ present in nums or -1 if no such subarray exists.
 A subarray is a contiguous non-empty sequence of elements within an array.
 
 Ex:-
-
 Input: nums = [2,3,4,3,4]
 Output: 4
 Explanation: The alternating subarrays are [3,4], [3,4,3], and [3,4,3,4]. 
