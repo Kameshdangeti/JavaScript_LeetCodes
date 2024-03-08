@@ -42,3 +42,4 @@ var alternatingSubarray = function (a) {
     }
     return max;
 };
+console.log(alternatingSubarray([2,3,4,3,4]));
