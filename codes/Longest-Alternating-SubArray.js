@@ -21,29 +21,24 @@ Explanation: The alternating subarrays are [3,4], [3,4,3], and [3,4,3,4].
 The longest of these is [3,4,3,4], which is of length 4.
 */
 
-var alternatingSubarray = function(a) 
-{
+var alternatingSubarray = function (a) {
     let n = a.length;
     let max = -1;
-    for (let j = 1; j < n; j++) 
-    {
-      let requiredVal = -1;
-      let cc = 1;
-    for (let i = j; i < n; i++) 
-    {
-        let v = a[i - 1] - a[i];
-        if (v === requiredVal) 
-        {
-          requiredVal = -requiredVal;
-          cc++;
-          max = Math.max(max, cc);
-        } 
-        else 
-        {
-          requiredVal = -1;
-          cc = 1;
+    for (let j = 1; j < n; j++) {
+        let requiredVal = -1;
+        let cc = 1;
+        for (let i = j; i < n; i++) {
+            let v = a[i - 1] - a[i];
+            if (v === requiredVal) {
+                requiredVal = -requiredVal;
+                cc++;
+                max = Math.max(max, cc);
+            }
+            else {
+                requiredVal = -1;
+                cc = 1;
+            }
         }
     }
- }
- return max;
+    return max;
 };
